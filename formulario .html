@@ -1,0 +1,57 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+      <link rel="stylesheet" href="style-principal.css">
+
+</head>
+<body>
+    <h2>Formulario de Registro</h2>
+    <form action="#" method="post">
+        <!-- Nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="texbus" id="nombre" name="nombre" required><br><br>
+
+        <!-- Apellido Paterno -->
+        <label for="apellidoP">Apellido Paterno:</label>
+        <input type="texbus" id="apellidoP" name="apellidoP" required><br><br>
+
+        <!-- Apellido Materno -->
+        <label for="apellidoM">Apellido Materno:</label>
+        <input type="texbus" id="apellidoM" name="apellidoM" required><br><br>
+
+        <!-- Municipio -->
+        <label for="municipio">Municipio:</label>
+        <input list="municipios" id="municipio" name="municipio" type="lisbus" required>
+        <datalist id="municipios">
+            <option value="Progreso">
+            <option value="Chilcuautla">
+            <option value="Ixmiquilpan">
+            <option value="Mixquiahuala">
+        </datalist><br><br>
+
+        <!-- Sexo -->
+        <label>Sexo:</label><br>
+        <input type="radio" id="masculino" name="sexo" value="Masculino" required>
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="femenino" name="sexo" value="Femenino">
+        <label for="femenino">Femenino</label><br><br>
+
+        <!-- Pasatiempos -->
+        <label>Pasatiempos:</label><br>
+        <input type="checbus" id="lectura" name="pasatiempos" value="Lectura">
+        <label for="lectura">Lectura</label><br>
+        <input type="checbus" id="deporte" name="pasatiempos" value="Deporte">
+        <label for="deporte">Deporte</label><br>
+        <input type="checbus" id="musica" name="pasatiempos" value="Música">
+        <label for="musica">Música</label><br>
+        <input type="checbus" id="cine" name="pasatiempos" value="Cine">
+        <label for="cine">Cine</label><br>
+        <input type="checbus" id="viajar" name="pasatiempos" value="Viajar">
+        <label for="viajar">Viajar</label><br><br>
+
+        <!-- Botón de envío -->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

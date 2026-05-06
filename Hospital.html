@@ -1,0 +1,123 @@
+<html>
+
+    <h1 align="center"><font color="#2A604F">HOSPITAL IMSS</font></h1>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f7;
+            margin: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        form {
+            max-width: 700px;
+            margin: auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 6px;
+        }
+        legend {
+            font-weight: bold;
+            color: #34495e;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1a252f;
+        }
+    </style>
+</head>
+<body>
+    <h2 align="center"><font color="#2A6034">Formulario de Ingreso de Paciente - IMSS</font></h2>
+    <form action="" method="post">
+        
+        <fieldset>
+            <legend>Datos de la Institución</legend>
+            <label>Institución:
+                <input type="text" name="institucion" value="IMSS" readonly>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+                <label>Nombre: <input type="text" name="nombre" placeholder="Escriba su nombre" required></label>
+                    <label>Apellido Paterno: <input type="text" name="apellido_paterno" required></label>
+                        <label>Apellido Materno: <input type="text" name="apellido_materno"></label>
+                            <label>Edad: <input type="number" name="edad" required></label>
+                                <label>CURP: <input type="text" name="curp" required></label>
+                                    <label>Localidad: <input type="text" name="localidad"></label>
+            <label>Sexo:
+                <input type="radio" name="sexo" value="M"> Masculino
+                    <input type="radio" name="sexo" value="F"> Femenino
+            </label>
+            <label>NSS: <input type="text" name="nss" required></label>
+                <label>Nacionalidad: <input type="text" name="nacionalidad"></label>
+                    <label>Religión: <input type="text" name="religion"></label>
+                        <label>Tipo de sangre:
+                <select name="sangre" required>
+                    <option value="">--Selecciona--</option>
+                      <option>O+</option><option>O-</option>
+                        <option>A+</option><option>A-</option>
+                          <option>B+</option><option>B-</option>
+                            <option>AB+</option><option>AB-</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+                <legend>Información Médica</legend>
+            <label>Alergias: <textarea name="alergias"></textarea></label>
+                <label>Enfermedades crónicas: <textarea name="enfermedades"></textarea></label>
+                    <label>Motivo de consulta: <textarea name="motivo"></textarea></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Fecha de Ingreso</legend>
+                <label>Fecha: <input type="date" name="fecha_ingreso" required></label>
+        </fieldset>
+
+        <fieldset>
+                    <legend>Signos Vitales</legend>
+            <label>Peso: <input type="number" step="0.1" name="peso"></label>
+                <label>Talla: <input type="number" name="talla"></label>
+                    <label>Temperatura: <input type="number" step="0.1" name="temperatura"></label>
+                        <label>Presión arterial: <input type="text" name="presion"></label>
+                            <label>Saturación: <input type="number" name="saturacion"></label>
+        </fieldset>
+
+        <div style="text-align:center;">
+            <button type="submit">Registrar</button>
+            <button type="reset">Cancelar</button>
+        </div>
+    </form>
+</body>
+</html>
+
